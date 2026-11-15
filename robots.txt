@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dohoon819.github.io/book-story/sitemap.xml

@@ -1,0 +1,13 @@
+{
+  "name": "book-story",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vendor": "esbuild vendor-entry.js --bundle --minify --format=esm --outfile=vendor/nostr.js",
+    "check": "node --check app.js && node --check community.js && node --check config.js",
+    "test": "node tests/community.cjs"
+  },
+  "dependencies": { "nostr-tools": "2.26.0" },
+  "devDependencies": { "esbuild": "0.28.2", "playwright": "1.62.1", "ws": "8.18.3" }
+}
